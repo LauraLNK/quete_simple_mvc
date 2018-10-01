@@ -1,0 +1,21 @@
+{
+    "name": "wilder/quete_simple_mvc",
+    "authors": [
+        {
+            "name": "Laura Lenik",
+            "email": "Laura.Lenik78@gmail.com"
+        }
+    ],
+    "require": {},
+
+
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+
+}
+
+
+// autoload permets de charger toutes mes classes dans le dossier src (dans ce cas là)
