@@ -1,14 +1,14 @@
 <?php
-// src/Model/ItemManager.php
+namespace Model;
+
 require __DIR__ . '/../../app/db.php';
 
 
-
-class categoryManager {
+class CategoryManager {
 
 
 // récupération de tous les items
-    public function selectAllcategories() :array
+    public function selectAllCategories() :array
     {
         $pdo = new \PDO(DSN, USER, PASS);
         $query = "SELECT * FROM category";
@@ -17,7 +17,7 @@ class categoryManager {
     }
 
 
-    public function selectOnecategory(int $id) : array
+    public function selectOneCategory(int $id) : array
     {
         $pdo = new \PDO(DSN, USER, PASS);
         $query = "SELECT * FROM category WHERE id = :id";
