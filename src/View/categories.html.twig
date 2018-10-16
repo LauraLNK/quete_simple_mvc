@@ -4,11 +4,12 @@
 {% block title %}Categories{% endblock %}
 {% block content %}
     <section>
-        <h1>Les items</h1>
+        <h1>Les catégories</h1>
         <ul>
             {% for category in categories %}
-                <li>{{ category.name }}</li>
+                <li>{{ category.name }} <a href="/category/edit/{id}"> Edit</a></li>
             {% endfor %}
         </ul>
     </section>
+    <a href="categories/add">ajouter</a>
 {% endblock %}
